@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.box{
+  @apply cursor-pointer aspect-square p-[1cqw] md:p-[0.2cqw] rounded-[0.8cqw] md:rounded-[0.2cqw] border-graytext border-[0.4cqw] md:border-[0.1cqw] w-[3cqw] md:w-[1cqw] m-auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
 }
+
+select::-ms-expand {
+  display: none;
+}
+
+button:disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  color: #007bff; /* Blue color */
+}
+
+.custom-select {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  padding-right: 20px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path fill="%236C737F" d="M0 0l5 6 5-6z"/></svg>'); /* Custom down arrow with color */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+.custom-select2 {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 20px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path fill="%236C737F" d="M0 0l5 6 5-6z"/></svg>'); /* Custom down arrow with color */
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 10px;
+}
+
