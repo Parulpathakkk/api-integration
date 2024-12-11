@@ -53,7 +53,7 @@ const TableSection = () => {
   );
 
   return (
-    <div className="border-gray-300 border-[0.01cqw] rounded-[1cqw] md:rounded-[0.7cqw] mt-[12cqw] md:mt-[2cqw] overflow-x-auto md:overflow-hidden">
+    <div className="border-gray-300 shadow-lg border-[0.01cqw] rounded-[1cqw] md:rounded-[0.7cqw] mt-[12cqw] md:mt-[2cqw] overflow-x-auto md:overflow-hidden">
       <div className="border-b-[0.01cqw] border-gray-300 px-[3cqw] md:px-[1cqw]">
         <div className="font-inter font-[500] text-purple text-[3.4cqw] md:text-[0.9cqw] border-purple border-b-[0.4cqw] md:border-b-[0.1cqw] inline-block py-[3cqw] md:py-[1cqw]">
           All
